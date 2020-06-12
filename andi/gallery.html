@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Picture Gallery</title>
+</head>
+<style>
+@import url(<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">);
+body{
+	background: linear-gradient(90deg, rgba(2,0,.6,1) 0%, rgba(9,9,121,1) 100%);
+}
+.container {
+  display: -webkit-box;
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 80vh;
+
+}
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+.box {
+  -webkit-box-flex: 1;
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+
+.child-0 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1%;
+          flex: 1 1 1%;
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 0s;
+}
+
+.child-1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1%;
+          flex: 1 1 1%;
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 5s;
+}
+
+.child-2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1%;
+          flex: 1 1 1%;
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 10s;
+}
+
+.child-3 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1%;
+          flex: 1 1 1%;
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 15s;
+}
+
+.child-4 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1%;
+          flex: 1 1 1%;
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 20s;
+}
+
+.child-5 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1%;
+          flex: 1 1 1%;
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 25s;
+}
+
+.child-6 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1%;
+          flex: 1 1 1%;
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 30s;
+}
+
+.child-7 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1%;
+          flex: 1 1 1%;
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 35s;
+}
+
+.child-8 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1%;
+          flex: 1 1 1%;
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 40s;
+}
+
+.child-9 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1%;
+          flex: 1 1 1%;
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 45s;
+}
+
+.child-10 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1%;
+          flex: 1 1 1%;
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 50s;
+}
+
+.child-11 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1%;
+          flex: 1 1 1%;
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 55s;
+}
+
+.child-12 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1%;
+          flex: 1 1 1%;
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 60s;
+}
+
+.child-13 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1%;
+          flex: 1 1 1%;
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 65s;
+}
+
+.child-14 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1%;
+          flex: 1 1 1%;
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 70s;
+}
+
+.child-15 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1%;
+          flex: 1 1 1%;
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 75s;
+}
+
+.child-16 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1%;
+          flex: 1 1 1%;
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 80s;
+}
+
+.child-17 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1%;
+          flex: 1 1 1%;
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 85s;
+}
+
+.child-18 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1%;
+          flex: 1 1 1%;
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 90s;
+}
+
+.child-19 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1%;
+          flex: 1 1 1%;
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 95s;
+}
+
+.child-20 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1%;
+          flex: 1 1 1%;
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 100s;
+}
+
+.child-21 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1%;
+          flex: 1 1 1%;
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 105s;
+}
+
+.child-22 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1%;
+          flex: 1 1 1%;
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 110s;
+}
+
+.child-23 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1%;
+          flex: 1 1 1%;
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 115s;
+}
+
+.child-24 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1%;
+          flex: 1 1 1%;
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 120s;
+}
+
+.child-25 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1%;
+          flex: 1 1 1%;
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 125s;
+}
+
+.child-26 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1%;
+          flex: 1 1 1%;
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 130s;
+}
+
+.child-27 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1%;
+          flex: 1 1 1%;
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 135s;
+}
+
+.child-28 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1%;
+          flex: 1 1 1%;
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 140s;
+}
+
+.child-29 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1%;
+          flex: 1 1 1%;
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 145s;
+}
+
+
+.box > img {
+  width: 100%;
+  height: 100%;
+}
+@keyframes animate{
+    0%{
+         -webkit-box-flex: 1;
+           flex: 1;
+    }
+	50%{
+         -webkit-box-flex: 1;
+          flex: 1 1 50%;
+    }
+    100%{
+        -webkit-box-flex: 1;
+          flex: 1;
+    }
+}
+.bg-tansparent
+{
+	background:transparent !important;
+	box-shadow:0px;
+	box-shadow: 0 0px 0px rgba(0,0,0,.5);
+	border:0px solid transparent;
+}
+</style>
+<body>
+<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg" id="modal"data-toggle="modal" data-target="#myModal" style="display:none">Open Modal</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content bg-tansparent">
+      <div class="modal-body bg-tansparent">
+<a onclick="play()" data-dismiss="modal"><img src="giphy.gif"></a>
+      </div>
+    </div>
+
+  </div>
+</div>
+<audio id="alarm" src="janji.mp3" muted></audio>
+
+<script type="text/javascript">
+document.getElementById('modal').click();
+    var value = document.getElementById("rvoltage").innerHTML;
+   function play(){
+        document.getElementById('alarm').play();
+        document.getElementById('alarm').muted = false;
+    }
+
+   
+
+   
+</script>
+	<h1 style="font-family:'Pacifico',cursive; font-size:3em; color:#ffffff; position:absolute; left:45%;">Memories❤</h1>
+	<br><br><br>
+	<div class="container">
+		<div class="box child-0">
+			<img src="a.png">
+		</div>
+		<div class="box child-1">
+			<img src="b.png">
+		</div>
+		<div class="box child-2">
+			<img src="c.png">
+		</div>
+		<div class="box  child-3">
+			<img src="d.png">
+		</div>
+		<div class="box  child-4">
+			<img src="i.png">
+		</div>
+	</div>
+	<div class="container">
+		<div class="box  child-5">
+			<img src="e.png">
+		</div>
+		<div class="box  child-6">
+			<img src="f.jpg">
+		</div>
+		<div class="box  child-7">
+			<img src="g.png">
+		</div>
+		<div class="box  child-8">
+			<img src="h.png">
+		</div>
+		<div class="box  child-9">
+			<img src="j.png">
+		</div>
+	</div>
+	<div class="container">
+		<div class="box  child-10">
+			<img src="l.png">
+		</div>
+		<div class="box  child-11">
+			<img src="k.jpeg">
+		</div>
+		<div class="box  child-12">
+			<img src="m.jpeg">
+		</div>
+		<div class="box  child-13">
+			<img src="n.jpeg">
+		</div>
+		<div class="box 14">
+			<img src="o.jpeg">
+		</div>
+	</div>
+	<div class="container">
+		<div class="box  child-15">
+			<img src="p.jpeg">
+		</div>
+		<div class="box  child-16">
+			<img src="q.jpeg">
+		</div>
+		<div class="box  child-17">
+			<img src="r.jpeg">
+		</div>
+		<div class="box child-18">
+			<img src="s.jpeg">
+		</div>
+		<div class="box child-19">
+			<img src="t.jpeg">
+		</div>
+	</div>
+	<div class="container">
+		<div class="box child-20">
+			<img src="u.jpeg">
+		</div>
+		<div class="box child-21">
+			<img src="v.jpeg">
+		</div>
+		<div class="box child-22">
+			<img src="w.jpeg">
+		</div>
+		<div class="box child-23">
+			<img src="x.jpeg">
+		</div>
+		<div class="box child-24">
+			<img src="y.jpeg">
+		</div>
+	</div>
+	<div class="container">
+		<div class="box  child-25">
+			<img src="z.png">
+		</div>
+		<div class="box  child-26">
+			<img src="z1.png">
+		</div>
+		<div class="box  child-27">
+			<img src="z2.png">
+		</div>
+		<div class="box  child-28">
+			<img src="z3.png">
+		</div>
+		<div class="box  child-29">
+			<img src="z4.jpeg">
+		</div>
+	</div>
+
+ 
+</body>
+</html>

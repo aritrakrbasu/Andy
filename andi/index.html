@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="index_a.css"> 
+    <title>Happy Birthday Andyyy!</title>
+</head>
+<style>
+    @import url(<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">);
+    body{
+    margin: 0;
+    padding: 0;
+}
+/* .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 0 30px 0;
+  height: 250px;
+  width: 250px;
+  z-index: -1;
+}  */
+.wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(2,0,.6,1) 0%, rgba(9,9,121,1) 100%);
+}
+a{
+	text-decoration:none;
+}
+a:link{
+	color: #15ede6;
+}
+a:visited{
+	color: #15ede6;
+}
+a:hover{
+	color: #e4a2fa;
+}
+a:active{
+	color: ##15ede6;
+}
+h1{
+    font-family: 'Pacifico', cursive;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+}
+h2 {
+	position: relative;
+	float: center;
+	color: #fff;
+	font-family: 'Pacifico', cursive;
+	font-size: 4em;
+}
+h2 span{
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #ffffff00;
+	width: 100%;
+	border-left: .1em solid transparent;
+	
+}
+p{
+    font-family: 'Pacifico', cursive;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    margin: 0;
+}
+label{
+    position: absolute;
+    top: 60%;
+    left: 42%;
+    color: #fff;
+}
+.PP{
+    position: absolute;
+    top: 65%;
+    left: 42%;
+    color: #fff;
+}
+.terms{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+}
+.terms1{
+    position: absolute;
+    top: 65%;
+    left: 40%;
+}
+.box div{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 6px solid rgba(255,255,255,0.8);
+}
+.box div:nth-child(1){
+    top: 12%;
+    left: 42%;
+    animation: animate 10s linear infinite;
+}
+.box div:nth-child(2){
+    top: 70%;
+    left: 50%;
+    animation: animate 7s linear infinite;
+}
+.box div:nth-child(3){
+    top: 17%;
+    left: 6%;
+    animation: animate 9s linear infinite;
+}
+.box div:nth-child(4){
+    top: 12%;
+    left: 42%;
+    animation: animate 10s linear infinite;
+}
+.box div:nth-child(5){
+    top: 67%;
+    left: 10%;
+    animation: animate 6s linear infinite;
+}
+.box div:nth-child(6){
+    top: 80%;
+    left: 70%;
+    animation: animate 12s linear infinite;
+}
+.box div:nth-child(7){
+    top: 60%;
+    left: 80%;
+    animation: animate 15s linear infinite;
+}
+.box div:nth-child(8){
+    top: 32%;
+    left: 25%;
+    animation: animate 16s linear infinite;
+}
+.box div:nth-child(9){
+    top: 90%;
+    left: 25%;
+    animation: animate 9s linear infinite;
+}
+.box div:nth-child(10){
+    top: 20%;
+    left: 80%;
+    animation: animate 5s linear infinite;
+}
+.google_btn{
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 10px 25px 10px 25px;
+  border-radius: 15px;
+  margin: 0;
+  position: absolute;
+  top: 75%;
+  left: 40%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.google_btn:hover{
+  background-color: #dcf3f7;
+  color: black;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 10px 25px 10px 25px;
+  box-shadow: 3px 3px 3px rgb(160, 169, 187);
+}
+.logo{
+    height: 250px;
+    width: 250px;
+}
+.logo{
+  margin: 0;
+  position: absolute;
+  top: 23%;
+  left: 40%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: none;
+}
+@keyframes animate{
+    0%{
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(0.3) translateY(-90px) rotate(360deg);
+        opacity: 0;
+    }
+}
+.circle
+{
+    border-radius: 50% !important;
+    background-size: cover !important;
+    border: 5px solid #0a6ae9;
+    margin:0px 10px;
+    z-index: 9999;
+}
+.large
+{
+    height:300px;
+    width:300px;
+}
+
+.friends-universe
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+.friends-universe:hover > div {
+  opacity: 0.75;
+}
+.friends-universe:hover > .small:hover {
+  opacity: 1.0;
+}
+.friends-universe:hover > .large:hover{
+  opacity: 1.0;
+}
+.wish-box {
+  width: 1050px;
+  border: 10px #ffffff00;
+  padding: 15px;
+  margin: 10px;
+}
+.navigator{
+	position: absolute;
+	float: center;
+	top: 73%;
+	left:45%;
+}
+@-webkit-keyframes typing{
+	from { width: 100%;}
+	to { width: 0;}
+}
+@-webkit-keyframes cursor{
+	50% { border-color: white;}
+}
+@keyframes typing{
+	from{ width: 100%;}
+	to{ width: 0;}
+}
+@keyframes cursor{
+	50% { border-color: white;}
+}
+</style>
+
+<body>
+    
+    <!-- <div class="container"> -->
+    <div class="wrapper">
+        <div>
+			<center><h2 style="color:#15ede6;">Happy Birthday And<font color="#ffffff">y</font><a href="friends.html">y</a><a href="gallery.html">y</a>!<span></span></h2><br>
+			<p><h3 style="color:white; font-family:'Pacifico',cursive;" class="wish-box">Many many happy returns of the day... Another adventure filled year awaits you. Welcome it by celebrating your birthday with pomp and splendor. Wishing you a very happy and fun-filled birthday! Count your life by smiles, not tears. Count your age by friends, not years.</h3></p></center>
+			<div class="friends-universe">
+                <a href="friends.html"><div class="large circle" style="background-image: url('aa.jpeg'); position:absolute; top:50%; left:40%"></div></a>
+            </div>
+        <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+<div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="col">
+        
+      </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
