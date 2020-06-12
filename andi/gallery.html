@@ -371,16 +371,17 @@ body{
 <audio id="alarm" src="janji.mp3" muted></audio>
 
 <script type="text/javascript">
+setTimeout(function(){window.location.hash = '#second';},25000);
+setTimeout(function(){window.location.hash = '#third';},50000);
+setTimeout(function(){window.location.hash = '#fourth';},75000);
+setTimeout(function(){window.location.hash = '#fifth';},100000);
+setTimeout(function(){window.location.hash = '#sixth';},125000);
 document.getElementById('modal').click();
     var value = document.getElementById("rvoltage").innerHTML;
    function play(){
         document.getElementById('alarm').play();
         document.getElementById('alarm').muted = false;
-    }
-
-   
-
-   
+    }   
 </script>
 	<h1 style="font-family:'Pacifico',cursive; font-size:3em; color:#ffffff; position:absolute; left:45%;">Memories❤</h1>
 	<br><br><br>
@@ -401,7 +402,7 @@ document.getElementById('modal').click();
 			<img src="i.png">
 		</div>
 	</div>
-	<div class="container">
+	<div class="container" id="second">
 		<div class="box  child-5">
 			<img src="e.png">
 		</div>
@@ -418,7 +419,7 @@ document.getElementById('modal').click();
 			<img src="j.png">
 		</div>
 	</div>
-	<div class="container">
+	<div class="container" id="third">
 		<div class="box  child-10">
 			<img src="l.png">
 		</div>
@@ -431,11 +432,11 @@ document.getElementById('modal').click();
 		<div class="box  child-13">
 			<img src="n.jpeg">
 		</div>
-		<div class="box 14">
+		<div class="box child-14">
 			<img src="o.jpeg">
 		</div>
 	</div>
-	<div class="container">
+	<div class="container" id="fourth">
 		<div class="box  child-15">
 			<img src="p.jpeg">
 		</div>
@@ -452,7 +453,7 @@ document.getElementById('modal').click();
 			<img src="t.jpeg">
 		</div>
 	</div>
-	<div class="container">
+	<div class="container"  id="fifth">
 		<div class="box child-20">
 			<img src="u.jpeg">
 		</div>
@@ -469,7 +470,7 @@ document.getElementById('modal').click();
 			<img src="y.jpeg">
 		</div>
 	</div>
-	<div class="container">
+	<div class="container"  id="sixth">
 		<div class="box  child-25">
 			<img src="z.png">
 		</div>
